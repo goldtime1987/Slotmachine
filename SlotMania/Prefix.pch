@@ -1,0 +1,39 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define SHOrientationLandScape
+
+#ifdef SHOrientationLandScape
+#define SCREEN_WIDTH			[[UIScreen mainScreen] bounds].size.height
+#define SCREEN_HEIGHT			[[UIScreen mainScreen] bounds].size.width
+
+#define SCALE_SCREEN_WIDTH		(SCREEN_WIDTH / 480)
+#define SCALE_SCREEN_HEIGHT		(SCREEN_HEIGHT / 320)
+#else
+#define SCREEN_WIDTH			[[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT			[[UIScreen mainScreen] bounds].size.height
+
+#define SCALE_SCREEN_WIDTH		(SCREEN_WIDTH / 320)
+#define SCALE_SCREEN_HEIGHT		(SCREEN_HEIGHT / 480)
+#endif
+
+// for Draw Line
+#define m_fRatioX				SCALE_SCREEN_WIDTH
+#define m_fRatioY				SCALE_SCREEN_HEIGHT
+
+#define iDevPixelX(x) ((m_fRatioX) * (x))
+#define iDevPixelY(y) ((m_fRatioY) * (y))
+#define iDevSize(size) (m_fRatioX * size)
+
+#endif

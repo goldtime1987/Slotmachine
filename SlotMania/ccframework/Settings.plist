@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>music</key>
+	<real>0.5</real>
+	<key>effect</key>
+	<real>0.5</real>
+	<key>coin</key>
+	<integer>1000</integer>
+	<key>lineCount</key>
+	<integer>1</integer>
+	<key>maxLineCount</key>
+	<integer>1</integer>
+	<key>betCount</key>
+	<integer>1</integer>
+	<key>firstFlag</key>
+	<integer>0</integer>
+	<key>curStage</key>
+	<integer>0</integer>
+	<key>gameResultCount</key>
+	<integer>0</integer>
+	<key>slot</key>
+	<string></string>
+	<key>tempSlot</key>
+	<string></string>
+	<key>gameResult</key>
+	<string></string>
+	<key>payTableFlag</key>
+	<false/>
+	<key>rowIndex</key>
+	<string></string>
+</dict>
+</plist>
